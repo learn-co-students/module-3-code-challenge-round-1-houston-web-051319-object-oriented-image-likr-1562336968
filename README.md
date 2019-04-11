@@ -80,10 +80,14 @@ Example Response:
 
 #### 2: Use the `Image` class to **render** a new image and append it **to the DOM**
 
-Use the data from the API response to change what's currently on the page (take a look at the already provided `index.html`). You will need to add/update:
+Use the data from the API response to update the page. Look in the `index.html` to see where to place the rendered image.
 
-- the image url
-- the image name
+> If you cannot figure out how to use the `Image` class, you can add the image data manually so that you can attempt the next deliverable
+>
+> You will need to add:
+>
+> * The image
+> * A header with the image's name
 
 
 
@@ -91,13 +95,13 @@ Use the data from the API response to change what's currently on the page (take 
 
 Render the comments in `li` elements.
 
-> If you cannot get your `Comment` class working quickly, add the images comments without a class so that you can attempt the next deliverable
+> If you cannot get your `Comment` class working quickly, add the comments without a class so that you can attempt the next deliverable
 
 
 
 #### 4: **Listen** for when a user tries to add a new comment
 
-It's always good to test here before moving forward.
+Treat this as it's own step and test here before moving forward.
 
 
 
