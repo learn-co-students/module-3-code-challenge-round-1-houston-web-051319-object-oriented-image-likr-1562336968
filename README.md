@@ -29,7 +29,9 @@ This code challenge can be broken down into 7 steps. It is recommended that you 
 6. When a user makes a comment, **send** the comment to the server so that it persists
 7. **Refactor** your code to make it as *clean as possible*
 
+## Functionality demo
 
+![Example](Demo.gif)
 
 #### 1: Get image data by **requesting** it from **the server**
 
