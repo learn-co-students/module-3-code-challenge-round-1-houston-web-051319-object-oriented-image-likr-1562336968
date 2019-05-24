@@ -17,14 +17,6 @@
  4. Any solution code from any lab, whether you wrote it or Flatiron School did
  5. Code from any lecture
 
-#### Cloning
-
-1. Go to <http://learn.co/assignments>
-2. Clone the repo to your local computer (do not fork)
-3. Before you begin coding, `git checkout -b your-name` to create and switch to your own branch (to check if it worked: `git status` and/or `git branch`)
-
-
-
 ### Deliverables
 
 This code challenge can be broken down into 7 steps. It is recommended that you commit after each step:
@@ -139,11 +131,3 @@ Required Headers
 **Don't do this without commiting first**
 
 **Don't do this without commiting first**
-
-
-
-### Submission
-
-1. When time is called, `git add` and `git commit` if you haven't already, then `git push` *on your branch*. You will never be able to push to `master`; you will not be able to push to your own branch before time is called. If you're done before time, make a commit (don't push it) and continue working on stretch features. If you break something, you can go back to your working commit.
-2. Make a pull request from your branch to `master`. Copy and paste the link to your pull request into the text box on <http://learn.co/assignments> for the code challenge task. Submit.
-3. Eat something nice for lunch and relax. *Do not* talk to fellow students, students in other mods, or anyone about the code challenge. Your instructors will give you feedback on your work in the afternoon.
