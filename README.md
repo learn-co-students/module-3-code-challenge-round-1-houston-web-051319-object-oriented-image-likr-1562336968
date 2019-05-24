@@ -133,3 +133,9 @@ Required Headers
 **Don't do this without commiting first**
 
 **Don't do this without commiting first**
+
+### BONUS
+
+* add a delete button to the li tag with comment's content
+* Delete a comment when a user clicks on that delete button 
+
