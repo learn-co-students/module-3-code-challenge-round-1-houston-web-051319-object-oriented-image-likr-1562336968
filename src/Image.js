@@ -3,13 +3,17 @@ class Image {
     constructor(url, name){
         this.div = document.createElement('div')
         this.div.className = 'image_card'
+        this.url = url
+
+        let imageDiv = document.getElementById('image_container')
+        
 
         const img = document.createElement('img')
         img.src = url
 
         const h4 = document.createElement('h4')
         h4.append(name)
-
+        imageDiv.innerHTML=img.outerHTML
         this.div.append(
             img,
             h4
@@ -21,3 +25,9 @@ class Image {
     }
 
 }
+
+
+
+
+
+
