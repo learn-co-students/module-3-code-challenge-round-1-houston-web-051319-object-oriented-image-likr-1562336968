@@ -1,7 +1,8 @@
 class Image {
 
-    constructor(name, url){
+    constructor(name, url, id){
         this.div = document.createElement('div')
+        this.id = id
         this.div.className = 'image_card'
         let imgContainer = document.querySelector("#image_container")
         imgContainer.append(this.div)
@@ -20,5 +21,6 @@ class Image {
     render(){
         return this.div
     }
+    
 
 }
