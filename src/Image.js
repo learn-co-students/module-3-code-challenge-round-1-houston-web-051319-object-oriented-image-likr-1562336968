@@ -13,9 +13,9 @@ class Image {
         this.div.append(
             img,
             h4
-        )
+        ) 
     }
-
+    
     render(){
         return this.div
     }
