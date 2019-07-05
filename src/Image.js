@@ -1,5 +1,6 @@
 class Image {
 
+    static all = []
     constructor(url, name){
         this.div = document.createElement('div')
         this.div.className = 'image_card'
