@@ -1,8 +1,7 @@
 document.querySelector('submit').addEventListener(click, function(){
 function addComment(e){
     e.preventDefault();
-    let body = document.getElementById('body').value;
-    fetch('http://localhost:3000image/',{
+    fetch('http://localhost:3000images/',{
         method:'POST',
         headers: {'Accept': 'application/json, text/plain, */*' ,
         'Content-type': 'application/json'
