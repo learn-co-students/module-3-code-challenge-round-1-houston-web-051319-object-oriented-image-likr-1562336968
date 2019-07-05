@@ -14,6 +14,7 @@ class Image {
             img,
             h4
         )
+        
     }
 
     render(){
