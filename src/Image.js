@@ -1,9 +1,10 @@
 class Image {
 
-    constructor(url, name){
+    constructor(name, url){
         this.div = document.createElement('div')
         this.div.className = 'image_card'
-
+        let imgContainer = document.querySelector("#image_container")
+        imgContainer.append(this.div)
         const img = document.createElement('img')
         img.src = url
 
