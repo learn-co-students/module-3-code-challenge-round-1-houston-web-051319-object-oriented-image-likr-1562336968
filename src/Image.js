@@ -1,5 +1,5 @@
 class Image {
-
+    
     constructor(url, name){
         this.div = document.createElement('div')
         this.div.className = 'image_card'
@@ -15,6 +15,8 @@ class Image {
             h4
         )
     }
+   
+
 
     render(){
         return this.div
