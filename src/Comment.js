@@ -25,7 +25,6 @@ class Comment {
                     'Accept': "application/json"
                 },
                 body: JSON.stringify({
-                    image_id: imageCard.value,
                     content: userInput.value
                 })
             })
