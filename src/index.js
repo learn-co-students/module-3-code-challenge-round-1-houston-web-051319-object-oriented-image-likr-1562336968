@@ -13,9 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
       myImage = new Image(result.url,result.name)
       document.querySelector('#image_container').append(myImage.render())
       result.comments.forEach( comment => {
-        console.log(comment.content)
         newComment = new Comment(comment.content)
         document.querySelector('#comments').append(newComment.render())
       })
     })
+
+  commentBox = document.querySelector('#comment_form')
+  submitButton = document.querySelector("#submit_button")
+  submitButton.addEventListener('click', (e)=>{
+    e.preventDefault()
+
+    console.log(commentBox.children[0].value)
+  })
 })
