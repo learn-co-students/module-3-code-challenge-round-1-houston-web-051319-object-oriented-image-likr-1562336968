@@ -14,9 +14,12 @@ class Image {
             img,
             h4
         )
+        this.render()
     }
 
     render(){
+        let imgSpace = document.querySelector('#image_container')
+        imgSpace.append(this.div);
         return this.div
     }
 
