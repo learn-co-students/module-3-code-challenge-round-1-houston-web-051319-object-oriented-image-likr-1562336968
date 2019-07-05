@@ -20,12 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchRequest(imageURL).then((image)=>{
     let myImg = new Image (image.url, image.name)
     imgContainer.append(myImg.render())
+    for(let i in image.comments){
+    new Comment(image.comments[i].content, comments)
+    }
   })
+
   
   submitBtn.addEventListener('click', (e)=>{
     e.preventDefault()
-    let comment = new Comment(commentText.value)
-    comments.append(comment.render())
+    let comment = new Comment(commentText.value, comments)
+    fetch(commentsURL, {
+      method: 'POST',
+      headers:{
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        image_id: comment.image_id,
+        content: comment.content
+      })
+    }).then((res)=>console.log(res))
   })
 
 })
