@@ -2,6 +2,7 @@ let newImage;
 let newImageResponse;
 let comments = [];
 let x;
+let newComment;
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('%c DOM Content Loaded and Parsed!', 'color: magenta')
@@ -34,8 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-let newComment;
-
 function logit(e) {
   e.preventDefault()
   let commentInput = document.getElementById("comment_input")
@@ -52,8 +51,7 @@ function logit(e) {
       'content': commentInput.value
     })
   })
-  
-  console.log("clicked")
+
 }
 
 let form = document.getElementById("comment_form")
