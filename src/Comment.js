@@ -1,3 +1,4 @@
+//have these here to make life a biiiit easier
 const commentsURL = `https://randopic.herokuapp.com/comments/`
 let imageId = 2923
 
