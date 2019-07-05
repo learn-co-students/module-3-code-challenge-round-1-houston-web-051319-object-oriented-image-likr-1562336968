@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(response => response.json() )
     
     .then(result => {
-        console.log(result)
         let pic = new Image(result.name, result.url)
         result.comments.forEach(comment => {
           new Comment(comment.content) 
         })
       
     })
+    
 
 
 })
