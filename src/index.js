@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   submitButton.addEventListener('click', (e)=>{
     e.preventDefault()
 
-    console.log(commentBox.children[0].value)
+    newComment = new Comment(commentBox.children[0].value)
+    document.querySelector('#comments').append(newComment.render())
   })
 })
